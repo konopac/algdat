@@ -2,18 +2,17 @@
 #include <iomanip>
 
 using namespace std;
-#define N_MAX 20;
 
 unsigned long long fac(unsigned int n);
 
 int main() {
-    unsigned int n;
+    unsigned int N_MAX = 20;
 
     cout << fixed << setprecision(0);
 
     cout << setw(10) << "n" << setw(30) << "Fakultaet von n" << endl << "\n";
 
-    for (n = 1; n <= 20; ++n) {
+    for (unsigned int n = 1; n <= N_MAX; ++n) {
         cout << setw(10) << n << setw(30) << fac(n) << endl;
     }
 
